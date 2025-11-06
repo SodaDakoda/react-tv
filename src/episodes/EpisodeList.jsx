@@ -1,6 +1,5 @@
 import "./episodes.css";
 
-/** A list of episode names that allows the user to select an episode */
 export default function EpisodeList({
   name,
   episodes,
@@ -17,7 +16,7 @@ export default function EpisodeList({
             onClick={() => setSelectedEpisode(episode)}
             className={episode === selectedEpisode ? "selected" : ""}
           >
-            {episode.title}
+            Episode {episode.number}: {episode.title}
           </li>
         ))}
       </ol>

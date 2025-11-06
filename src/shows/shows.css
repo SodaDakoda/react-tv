@@ -1,28 +1,28 @@
 .shows {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #222;
+  padding: 10px;
+  flex-wrap: wrap;
 }
 
 .show {
-  padding: 0 1ch;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-.show:not(:last-child) {
-  border-right: 1px solid white;
-}
-
-.show:hover,
-.show.selected {
-  cursor: pointer;
-  text-decoration: underline;
+.show:hover {
+  color: #ffcc00;
 }
 
 .show-details {
-  display: grid;
-  gap: 1rem;
-}
-
-@media (width >= 500px) {
-  .show-details {
-    grid-template-columns: minmax(30ch, auto) 1fr;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
